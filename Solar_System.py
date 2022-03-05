@@ -98,5 +98,3 @@ writervideo = animation.FFMpegWriter(fps=20, metadata={"Artist":"Rishikesh Jha"}
 anim.save("Intermediate_Solar_System.mp4", writer=writervideo)
 """
 plt.show()
-
-
