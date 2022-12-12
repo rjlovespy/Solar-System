@@ -99,23 +99,23 @@ Defining objects behaviour for animation
 """
 def solar_system(i):
   mercury.set_data(x1[i],y1[i])
-  mercury_o.set_data(x1[i-10:i],y1[i-10:i])            # Generates a tail
+  mercury_o.set_data(x1[i-10:i+1],y1[i-10:i+1])            # Generates a tail
   venus.set_data(x2[i],y2[i])
-  venus_o.set_data(x2[i-10:i],y2[i-10:i])              # Generates a tail
+  venus_o.set_data(x2[i-10:i+1],y2[i-10:i+1])              # Generates a tail
   earth.set_data(x3[i],y3[i])
-  earth_o.set_data(x3[i-10:i],y3[i-10:i])              # Generates a tail
+  earth_o.set_data(x3[i-10:i+1],y3[i-10:i+1])              # Generates a tail
   mars.set_data(x4[i],y4[i])
-  mars_o.set_data(x4[i-10:i],y4[i-10:i])               # Generates a tail
+  mars_o.set_data(x4[i-10:i+1],y4[i-10:i+1])               # Generates a tail
   jupiter.set_data(x5[i],y5[i])
-  jupiter_o.set_data(x5[i-10:i],y5[i-10:i])            # Generates a tail
+  jupiter_o.set_data(x5[i-10:i+1],y5[i-10:i+1])            # Generates a tail
   saturn.set_data(x6[i],y6[i])
-  saturn_o.set_data(x6[i-10:i],y6[i-10:i])             # Generates a tail
+  saturn_o.set_data(x6[i-10:i+1],y6[i-10:i+1])             # Generates a tail
   uranus.set_data(x7[i],y7[i])
-  uranus_o.set_data(x7[i-10:i],y7[i-10:i])             # Generates a tail
+  uranus_o.set_data(x7[i-10:i+1],y7[i-10:i+1])             # Generates a tail
   # neptune.set_data(x8[i],y8[i])
-  # neptune_o.set_data(x8[i-10:i],y8[i-10:i])          # Generates a tail
+  # neptune_o.set_data(x8[i-10:i+1],y8[i-10:i+1])          # Generates a tail
   halley.set_data(xh[i],yh[i])
-  halley_o.set_data(xh[i-15:i],yh[i-15:i])             # Generates a tail
+  halley_o.set_data(xh[i-15:i+1],yh[i-15:i+1])             # Generates a tail
   return mercury, mercury_o, venus, venus_o, earth, earth_o, mars, mars_o,jupiter, jupiter_o, saturn, saturn_o, uranus, uranus_o, halley, halley_o, #neptune, neptune_o, 
   
   
