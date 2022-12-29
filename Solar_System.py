@@ -127,7 +127,7 @@ fig.suptitle("Solar System", color="fuchsia")
 fig.patch.set_facecolor('k')
 fig.tight_layout()
 plt.plot(p1_a*p1_e,0,'ro',markersize=6.5, label='Sun')
-plt.annotate("Courtesy Rishikesh Jha",(16,-19), color="fuchsia")
+plt.annotate("Courtesy of Rishikesh Jha",(16,-19), color="fuchsia")
 plt.axis(False)
 plt.legend()
 """
