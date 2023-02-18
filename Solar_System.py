@@ -1,7 +1,5 @@
-from matplotlib.animation import writers
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
 import numpy as np
 
 
@@ -122,17 +120,12 @@ def solar_system(i):
 """
 Calling FuncAnimation function to animate the Solar System
 """
-anim=animation.FuncAnimation(fig, solar_system, frames = len(th), interval=100, blit=True, repeat =True)
+anime=animation.FuncAnimation(fig, solar_system, frames = len(th), interval=100, blit=True, repeat =True)
 fig.suptitle("Solar System", color="fuchsia")
 fig.patch.set_facecolor('k')
-fig.tight_layout()
-plt.plot(p1_a*p1_e,0,'ro',markersize=6.5, label='Sun')
-plt.annotate("Courtesy of Rishikesh Jha",(16,-19), color="fuchsia")
-plt.axis(False)
+ax.plot(p1_a*p1_e,0,'ro',markersize=6.5, label='Sun')
+ax.annotate("Courtesy of Rishikesh Jha",(16,-19), color="fuchsia")
+ax.axis(False)
 plt.legend()
-"""
-plt.rcParams["animation.ffmpeg_path"]= r'C:/ffmpeg/bin/ffmpeg.exe' 
-writervideo = animation.FFMpegWriter(fps=20, metadata={"Artist":"Rishikesh Jha"},bitrate=50000) 
-anim.save("Solar_System.mp4", writer=writervideo)
-"""
+# anime.save("Solar_System.gif")
 plt.show()
